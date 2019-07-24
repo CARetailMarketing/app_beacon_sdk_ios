@@ -60,6 +60,18 @@ playground.xcworkspace
 
 Carthage/Build
 
+# GitHubへライブラリをアップロードする際、以下はアップロード対象外とする。
+
+BeaconStamp.xcodeproj/
+BeaconStamp.xcworkspace/
+BeaconStampTests/
+fastlane/
+Gemfile
+Gemfile.lock
+Podfile
+Podfile.lock	
+README.md
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -79,4 +91,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+Pods
 
+.bundle

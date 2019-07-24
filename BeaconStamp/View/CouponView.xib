@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponView" customModule="BeaconStamp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-2h-2jO">
+                    <rect key="frame" x="20" y="60" width="335" height="335"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8C0-2h-2jO" secondAttribute="height" multiplier="1:1" id="pYn-km-l4i"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5k-bO-jbm">
+                    <rect key="frame" x="40" y="415" width="295" height="44"/>
+                    <color key="backgroundColor" red="0.92941176470588238" green="0.0" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gEx-9V-1WA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="クーポン発券">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="openBrowser:" destination="-1" eventType="touchUpInside" id="8HN-29-g60"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.5" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-ZT-WE3">
+                    <rect key="frame" x="165.5" y="603" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="22l-Kj-Xca"/>
+                        <constraint firstAttribute="width" constant="44" id="MTe-dm-AC2"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onCloseWithView:" destination="-1" eventType="touchUpInside" id="PvC-2g-eVh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4022099743150685" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UkK-ZT-WE3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2jE-ex-tfx"/>
+                <constraint firstItem="8C0-2h-2jO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="IZW-jN-xSQ"/>
+                <constraint firstItem="P5k-bO-jbm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="Kmn-GN-TzW"/>
+                <constraint firstItem="8C0-2h-2jO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="M4x-gQ-XAM"/>
+                <constraint firstItem="P5k-bO-jbm" firstAttribute="top" secondItem="8C0-2h-2jO" secondAttribute="bottom" constant="20" id="ePG-hW-d6m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8C0-2h-2jO" secondAttribute="trailing" constant="20" id="oYO-9m-E9N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UkK-ZT-WE3" secondAttribute="bottom" constant="20" id="reY-iK-b0Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="P5k-bO-jbm" secondAttribute="trailing" constant="40" id="zzR-Wc-pkq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
+        </view>
+    </objects>
+</document>
